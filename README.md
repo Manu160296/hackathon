@@ -7,6 +7,7 @@
 
 ### DIRIGIDO A: consumidores de 17-30 años, que les guste los géneros de terror, comedia, basados en libro y suspenso, y que además prefieren mirar películas desde el 2000 hacia adelante.
    
+### PROYECTO PILOTO : [PROYECTO](https://manu160296.github.io/testing-movie/)
 
 ### FLUJO DE TRABAJO:
 
@@ -47,3 +48,9 @@
   - Angelica Villalobos Cabezas: Scketch
   - Edith Rocio Quilla Mamani: Prototipado de baja fidelidad, research, creación de google form.
   - Diana Huamanchay: Investigación del uso del API OMDB y README.
+  
+  #### 2nd Day:
+  - Manuela de Fátima Flores Vilchez: 
+  - Angelica Villalobos Cabezas: 
+  - Edith Rocio Quilla Mamani: 
+  - Diana Huamanchay: 
