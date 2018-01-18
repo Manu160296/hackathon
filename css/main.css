@@ -1,3 +1,4 @@
+/* Logtin */
 .back-login {
   background-image: url(../assets/images/bacl-login.jpg);
   background-repeat: no-repeat;
@@ -34,4 +35,29 @@ div.line::before {
 
 .block {
   display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+/*Index*/
+
+
+.icon-home {
+  height: 70vh;
+  width: 100%;
+  margin-top: 90px;
+  margin-left: 8px;
+}
+
+.phrase {
+  color: rgb(145, 28, 28);
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
 }
