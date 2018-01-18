@@ -1,6 +1,6 @@
 /* Logtin */
 .back-login {
-  background-image: url(../assets/images/bacl-login.jpg);
+  background-image: url(../assets/images/back-login.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -29,7 +29,7 @@ div.line::before {
 }
 
 .login {
-  background-color: #2020202d;
+  background-color: #f16439d0;
   opacity: 0.5;
 }
 
