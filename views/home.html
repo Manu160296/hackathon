@@ -1,83 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" href="assets/images/logo2 (2).png">
-  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/icons/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../vendors/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Document</title>
 </head>
 <body>
-  <ul class="nav justify-content-end">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Active</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </li>
-  </ul>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i>Perfil<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 
-<!--section search-->
-  <ul>
-    <li class="search">
-      <div class="search-box">
-        <form action="">
-          <input type="text" placeholder="Busca tu saga">
-        </form>
-        <i class="fa fa-search" aria-hidden="true"></i>
-      </div>
-    </li>
-  </ul>
-<!-- Dropdown -->
-  <div class="dropdown-1">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Dropdown
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-      <button class="dropdown-item" type="button">Action</button>
-      <button class="dropdown-item" type="button">Another action</button>
-      <button class="dropdown-item" type="button">Something else here</button>
+<!-- Carrusel -->
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="9"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="10"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="11"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="12"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="13"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="14"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="15"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="16"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="17"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="18"></li>
+  </ol>
+ 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="../assets/images/300.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="../assets/images/goku.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="../assets/images/rapidos.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="../assets/images/harry-poter.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="../assets/images/eclipse.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="../assets/images/piratas.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="../assets/images/king.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="../assets/images/rocky.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="../assets/images/transformers.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="../assets/images/simios.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="../assets/images/resident.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="../assets/images/goku.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="../assets/images/señor.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="../assets/images/star-trek.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="../assets/images/star-wars.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="../assets/images/narnia.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="../assets/images/toy-story.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="../assets/images/los-juegos.jpg" alt="...">
     </div>
   </div>
-  <div class="dropdown-2">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Dropdown
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-      <button class="dropdown-item" type="button">Action</button>
-      <button class="dropdown-item" type="button">Another action</button>
-      <button class="dropdown-item" type="button">Something else here</button>
-    </div>
-  </div>
-
-        <!-- Carrusel -->
-
-  <section>
-    <div class="container-img">
-      <div><img src="../assets/images/gotzila.jpg" alt="" width="100%"></div>
-      <div><img src="../assets/images/liga.jpg" alt="" width="100%"></div>
-      <div><img src="../assets/images/thor.jpg" alt="" width="100%"></div>
-      <div><img src="../assets/images/divergente.jpg" alt="" width="100%"></div>
-      <div><img src="../assets/images/3msc.jpg" alt="" width="100%"></div>
-      <a class="prev">&#10094;</a>
-      <a class="next">&#10095;</a>
-    </div>
-    <div class="container-btn">
-      <input type="radio" class="btn-circle" name="btn" value="0">
-      <input type="radio" class="btn-circle" name="btn" value="1">
-      <input type="radio" class="btn-circle" name="btn" value="2">
-      <input type="radio" class="btn-circle" name="btn" value="3">
-      <input type="radio" class="btn-circle" name="btn" value="4">
-    </div>
-  </section>
+ 
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div> <!-- Carousel -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="../vendors/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
 	<script src="../js/home.js"></script>
