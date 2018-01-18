@@ -1,11 +1,11 @@
-# < ONLY ONE CODE >
-## HACKATHON
+## SAGATICS
 
-### TEMATICA: Consumo de películas
+### Tema: Películas
 
-### OBJETIVO: Crear soluciones/productos utilizando el API de Open Movie Database (OMDB) o the movie database .
+### Objetivo: Crear soluciones/productos utilizando el API de Open Movie Database (OMDB) o the movie database .
 
-### DIRIGIDO A: consumidores de 17-30 años, que les guste los géneros de terror, comedia, basados en libro y suspenso, y que además prefieren mirar películas desde el 2000 hacia adelante.
+### Dirigido a: 
+Personas de 16-30 años, que les guste los géneros de terror, comedia, basados en libro, animadas y suspenso; y que además prefieren mirar películas que sean partes de sagas.
    
 ### PROYECTO PILOTO : [PROYECTO](https://manu160296.github.io/testing-movie/)
 
