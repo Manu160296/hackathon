@@ -1,9 +1,11 @@
-/* Carrusel */
 body {
     margin: 0;
-    background-color:green;
+    background-color:#1be21b8a;
 }
 
+
+
+/* Carrusel */
 section {
     display: flex;
     flex-direction: column;
