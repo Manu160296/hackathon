@@ -22,3 +22,15 @@
   text-align: center;
   margin-top: 10px;
 }
+
+.grad {
+  background-color: aquamarine;
+}
+
+/*Perfil*/
+
+.profile-pic {
+  border: 5px solid red;
+  width: 256px;
+  
+}
