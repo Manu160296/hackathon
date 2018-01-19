@@ -72,3 +72,69 @@ function signOut() {
 	  window.location.href = '../index.html';
   });
 }
+
+// login with email:
+var send = $('.send-register-js');
+console.log(send);
+
+send.on('click', registrar);
+
+function registrar() {
+  var email = $('.register-email-js').val();
+  var password = $('.password-register-js').val();
+  console.log(email);
+  console.log(password);
+  firebase.auth().createUserWithEmailAndPassword(email, password)
+    .then(function() {
+      verificar();
+    })
+    .catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      console.log(errorCode);
+      var errorMessage = error.message;
+      console.log(errorMessage);
+      // ...
+    });
+}
+
+var submit = $('.send-register2-js');
+submit.on('click', signIn);
+function signIn() {
+  console.log('click');
+  var email2 = $('.register-email2-js').val();
+  var password2 = $('.password-register2-js').val();
+
+  firebase.auth().signInWithEmailAndPassword(email2, password2)
+    .catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      console.log(errorCode);
+      var errorMessage = error.message;
+      // ...
+      console.log(errorMessage);
+    });
+}
+
+function observador() {
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      // User is signed in.
+      console.log('usuario activo ');
+      var displayName = user.displayName;
+      var email = user.email;
+      var emailVerified = user.emailVerified;
+      var photoURL = user.photoURL;
+      var isAnonymous = user.isAnonymous;
+      var uid = user.uid;
+      var providerData = user.providerData;
+      // ...
+    } else {
+      // User is signed out.
+      // ...
+      console.log('no existe usuario activo');
+    }
+  });
+}
+
+observador();
