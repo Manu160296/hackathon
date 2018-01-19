@@ -1,41 +1,55 @@
-$(document).ready(function() {
-  var index = 0;
-  showImage(index);
+function moveToSelected(element) {
 
-  $('.prev').click(function() {
-    hideImage(index);
-    index--;
-    if (index === -1) {
-      index = 4;
+  if (element == "next") {
+    var selected = $(".selected").next();
+  } else if (element == "prev") {
+    var selected = $(".selected").prev();
+  } else {
+    var selected = element;
+  }
+
+  var next = $(selected).next();
+  var prev = $(selected).prev();
+  var prevSecond = $(prev).prev();
+  var nextSecond = $(next).next();
+
+  $(selected).removeClass().addClass("selected");
+
+  $(prev).removeClass().addClass("prev");
+  $(next).removeClass().addClass("next");
+
+  $(nextSecond).removeClass().addClass("nextRightSecond");
+  $(prevSecond).removeClass().addClass("prevLeftSecond");
+
+  $(nextSecond).nextAll().removeClass().addClass('hideRight');
+  $(prevSecond).prevAll().removeClass().addClass('hideLeft');
+
+}
+
+// Eventos teclado
+$(document).keydown(function(e) {
+    switch(e.which) {
+        case 37: // left
+        moveToSelected('prev');
+        break;
+
+        case 39: // right
+        moveToSelected('next');
+        break;
+
+        default: return;
     }
-    showImage(index);
-  });
+    e.preventDefault();
+});
 
-  $('.next').click(nextImage);
+$('#carousel div').click(function() {
+  moveToSelected($(this));
+});
 
-  $('input[type=\'radio\']').click(function() {
-    hideImage(index);
-    index = $(this).val();
-    showImage(index);
-  });
+$('#prev').click(function() {
+  moveToSelected('prev');
+});
 
-  setInterval(nextImage, 5000);
-
-  function nextImage() {
-    hideImage(index);
-    index++;
-    if (index === 5) {
-      index = 0;
-    }
-    showImage(index);
-  }
-
-  function hideImage(index) {
-    $(('.container-img div:eq(' + index + ')')).css('display', 'none');
-  }
-
-  function showImage(index) {
-    $(('.container-img div:eq(' + index + ')')).fadeIn('slow');
-    $('input[value=' + index + ']').prop('checked', 'checked');
-  }
+$('#next').click(function() {
+  moveToSelected('next');
 });

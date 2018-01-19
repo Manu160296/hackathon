@@ -1,4 +1,5 @@
 /* Logtin */
+
 .back-login {
   background-image: url(../assets/images/back-login.jpg);
   background-repeat: no-repeat;
@@ -85,7 +86,7 @@ div.line::before {
 .bg-black{
   width: 100%;
   height: 100vh;
-  background-color: #333335
+  background-color: #333335;
 }
 
 .bg-image{

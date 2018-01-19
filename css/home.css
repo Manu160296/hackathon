@@ -1,70 +1,88 @@
 body {
-    margin: 0;
-    background-color:#1be21b8a;
+  background: #333335;
+}
+html, body, main {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-
-
-/* Carrusel */
-section {
-    display: flex;
-    flex-direction: column;
-    top: 0;
-    bottom: 0;
-    width: 60%;
-    margin: auto;
-    color: white;
-    font-family: 'Sofia', cursive;
+#carousel {
+  position: relative;
+  height: 400px;
+  top: 35%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+#carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+#carousel div img {
+  width: 400px;
+  transition: width 1s;
+}
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideLeft img {
+  width: 200px;
+}
+#carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideRight img {
+  width: 200px;
+}
+#carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.prev img {
+  width: 300px;
+}
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.prevLeftSecond img {
+  width: 200px;
+}
+#carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.next img {
+  width: 300px;
+}
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.nextRightSecond img {
+  width: 200px;
 }
 
-.container-img {
-    margin: auto;
+.buttons {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
 }
-
-img {
-    border: 4px solid white;
-}
-
-.container-img div {
-    display: none;
-    justify-content: center;
-}
-
-.container-btn {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-.btn-circle {
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    -webkit-appearance: none;
-    outline: 0;
-    background-color: lightgoldenrodyellow;
-    border: 0;
-    border-radius: 50%;
-    margin: 10px;
-    transition: 0.5s ease;
-}
-
-.prev, .next {
-    position: absolute;
-    top: 25%;
-    width: 30px;
-    font-size: 28px;
-    cursor: pointer;
-    padding: 10px;
-    background-color:transparent;
-}
-
-.carousel{
-    background: transparent;
-    margin-top: 20px;
-}
-
-.carousel .item img{
-    margin: 0 auto; /* Align slide image horizontally center */
-}
-
