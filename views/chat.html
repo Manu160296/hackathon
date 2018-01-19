@@ -30,9 +30,11 @@
         </div>
       </div>
 
-
-    <form class="container" action="">
-      <ul class="mess" id="chatUl"></ul>
+    <div class="container">
+      <div class="comentarios">
+          <ul class="mess" id="chatUl"></ul>
+      </div>
+    <form action="">
       <div class="conversacion">
           <label for="nombre">Nombre</label>
           <input type="text" id="nombre">
@@ -41,8 +43,9 @@
           <label for="mensaje">Mensaje</label>
           <textarea id="mensaje"></textarea>
       </div>
-      <button class="btn-chat" type="button" id="btnEnviar">Enviar</button>
+      <button class="btn btn-danger btn-chat" type="button" id="btnEnviar">Enviar</button>
       </form>
+    </div>
     
       
 <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>

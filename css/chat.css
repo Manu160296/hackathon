@@ -42,11 +42,15 @@ body {
 
 
 /* firebase */
+.container * {
+  display: block;
+}
 
-.container {
+.comentarios {
   width: 70%;
   background: skyblue;
-  margin-top: 20%;
+  margin-top: 5%;
+  border-radius: 1vh;
 }
 
 .conversacion {
