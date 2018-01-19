@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  $('.carousel').carousel();
+  $('.carousel').carousel({
+    interval: 2000
+  });
   function moveToSelected(element) {
     if (element === 'next') {
       var selected = $('.selected').next();
@@ -67,7 +71,7 @@ $(document).ready(function() {
 
   searchButton.on('click', function(event) {
     var searchText = $('#search-input-js').val();
-    $('#carousel').addClass('hidden');
+    $('.carousel-js').addClass('hidden');
     console.log(searchText);
     getMovie(searchText);
   });
