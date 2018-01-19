@@ -7,37 +7,95 @@
     <title>Document</title>
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="vendors/bootstrap-3.3.7-dist/css/bootstrap.min.css" >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
- <!--   <div class="bg-black flexbox-container">
-        <div class="bg-image col-5-xs ">
-            <img src="assets/camara.jpg" alt="" class="img-size">
-
-        </div>
-        <div class="box-sign">
-
-        </div>
-    </div> -->
-
     <div class="container bg-black">
-        <br><br>
-        <div class="row">
-            <div class="div col-xs-6 col-xs-offset-3 flexbox-container">
-                    <img src="assets/images/camara.jpg" alt="" class="img-size">
+
+
+
+        <div class="row bg-primary">
+            <div class="div col-xs-12 flexbox-container">
+                    <img src="assets/images/banner.jpg" alt="" class="img-size">
             </div>
         </div>
         <br><br>
         <div class="row">
             <div class="col-xs-2 col-xs-offset-5">
-                <button class="btn btn-style" id="start-login">Ingresar con google</button>
+                <button class="btn btn-style" >Ingresar con google</button>
                 <br>
                 <br>
-                <button class="btn btn-style">Ingresar con correo</button>
+                <button class="btn btn-style" data-toggle="modal" data-target=".sign-in-modal">Registrarse  con correo</button>
+                <br>
+                <br>
+                <button class="btn btn-style " data-toggle="modal" data-target=".sign-up-modal" >Sign up</button>
             </div>
 
         </div>
     </div>
+
+    <!--MODAL REGISTRARSE -->
+    <div class="modal fade sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel">Log In</h4>
+      </div>
+      <div class="modal-body">
+        <div class="">
+          <div class="input-group form-group">
+          <div class="input-group-addon"> <i class="fa fa-user-circle-o fa-lg"></i> </div>
+          <input type="text" name="" value="" placeholder="Email" class="form-control register-email-js">
+          </div>
+          <div class="input-group form-group">
+          <div class="input-group-addon"> <i class="fa fa-lock fa-lg"></i> </div>
+          <input type="password" name="" value="" placeholder="Password" class="form-control password-register-js">
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary send-register-js" data-dismiss="modal">Registrarse</button>
+
+      </div>
+      <div class="modal-footer">
+      <!--  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        <button class="btn btn-warning" id="start-login">Log in with google</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!--MODAL INGRESAR -->
+
+<div class="modal fade sign-up-modal " tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title" id="gridSystemModalLabel">Log In</h4>
+  </div>
+  <div class="modal-body">
+    <div class="">
+      <div class="input-group form-group">
+      <div class="input-group-addon"> <i class="fa fa-user-circle-o fa-lg"></i> </div>
+      <input type="text" name="" value="" placeholder="Email" class="form-control register-email2-js ">
+      </div>
+      <div class="input-group form-group">
+      <div class="input-group-addon"> <i class="fa fa-lock fa-lg"></i> </div>
+      <input type="password" name="" value="" placeholder="Password" class="form-control password-register2-js">
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary send-register2-js ">Ingresar</button>
+
+  </div>
+  <div class="modal-footer">
+  <!--  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+    <button class="btn btn-warning">Log in with google</button>
+  </div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
