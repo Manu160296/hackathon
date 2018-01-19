@@ -9,14 +9,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  position: static;
   font-family: 'Marvel', sans-serif;
 }
 
 .grad1 {
   background-color: rgba(49, 47, 47, 0.514);
   height: 100%;
-  position: static;
 }
 
 .title {
@@ -154,6 +152,7 @@
 @media (min-width:960px){
   .col-md-3 .col-md-3 .well{
       height: 420px;
+      margin-top: 20px;
     }
 
   #container-movies-js .col-md-3 img {
