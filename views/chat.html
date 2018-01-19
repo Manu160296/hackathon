@@ -24,46 +24,22 @@
     </div>
     <button class="btn-chat" type="button" id="btnEnviar">Enviar</button>
     </form>  
-    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
     <script>
-    // Initialize Firebase
-    var config = {
-    apiKey: "AIzaSyDnba3U4s9SCTTtsyzKCgROhAXiJAWIOcU",
-    authDomain: "practicando-213d2.firebaseapp.com",
-    databaseURL: "https://practicando-213d2.firebaseio.com",
-    projectId: "practicando-213d2",
-    storageBucket: "practicando-213d2.appspot.com",
-    messagingSenderId: "670989432436"
-    };
-    firebase.initializeApp(config);
-    var txtNombre = document.getElementById('nombre');
-    var txtMensaje = document.getElementById('mensaje');
-    var btnEnviar = document.getElementById('btnEnviar');
-    var chatUl = document.getElementById('chatUl');
-    btnEnviar.addEventListener("click", function() {
-    var nombre = txtNombre.value;
-    var mensaje = txtMensaje.value;
-    var html = "<li><b>"+nombre+": </b>"+mensaje+"</li>";
-    chatUl.innerHTML += html;
-    firebase.database().ref('chat').push({
-        name: nombre,
-        menssaje: mensaje
-    });
-    });
-    firebase.database().ref('chat')
-    .on('value', function(snapshot) {
-        var html = '';
-        snapshot.forEach(function (e) {
-        var element = e.val();
-        var nombre = element.name;
-        var mensaje = element.menssaje;
-        html+= "<li><b>"+nombre+": </b>"+mensaje+"</li>";
-        });
-        chatUl.innerHTML = html;
-    });
-</script>
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDW1o9U4yoqCKqmc_rZZJfULlQpcrE33m4",
+        authDomain: "producto-2ce12.firebaseapp.com",
+        databaseURL: "https://producto-2ce12.firebaseio.com",
+        projectId: "producto-2ce12",
+        storageBucket: "producto-2ce12.appspot.com",
+        messagingSenderId: "846954295488"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="../js/chat.js"></script>
 </body>
 </html>
