@@ -1,0 +1,26 @@
+
+  
+  /*Firebase*/
+ 
+  .photo-url {
+    width: 100px;
+  }
+  
+  .conversacion {
+    width: 50%;
+    margin-left: 100px;
+  }
+  
+  .mess {
+    margin-left: 100px;
+  }
+  
+  .chat {
+    width: 100%;
+  }
+  
+  .btn-chat {
+    width: 50%;
+    margin-left: 100px;
+    margin-bottom: 20px;
+  }
