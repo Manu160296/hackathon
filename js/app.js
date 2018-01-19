@@ -138,3 +138,35 @@ function observador() {
 }
 
 observador();
+
+/* Acceso a datos de firebase*/
+var tablaDeBaseDatos = firebase.database().ref('chat');
+
+/* CHAT */
+var txtNombre = $('#name');
+var txtMensaje = $('#message');
+var btnEnviar = $('#btnEnviar');
+
+btnEnviar.click(function(event) {
+  event.preventDefault();
+  var nombre = txtNombre.val();
+  var mensaje = txtMensaje.val();
+  var html = '<li><b>' + nombre + ':</b>' + mensaje + '</li>';
+  chatUl.innerHTML += html;
+
+  tablaDeBaseDatos.push({
+    name: nombre,
+    message: mensaje
+  });
+});
+
+tablaDeBaseDatos.on('value', function(snapshot) {
+  var html = '';
+  snapshot.forEach(function(e) {
+    var element = e.val();
+    var nombre = element.name;
+    var mensaje = element.message;
+    html += '<li><b>' + nombre + ':</b>' + mensaje + '</li>';
+  });
+  chatUl.html = html;
+});
