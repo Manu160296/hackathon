@@ -2,28 +2,37 @@
 
 ### Tema: Películas
 
-### Objetivo: Crear soluciones/productos utilizando el API de Open Movie Database (OMDB) o the movie database .
+### Objetivo:
+Crear soluciones/productos utilizando el API de Open Movie Database (OMDB) o the movie database .
 
 ### Dirigido a: 
 Personas de 16-30 años, que les guste los géneros de terror, comedia, basados en libro, animadas y suspenso; y que además prefieren mirar películas que sean partes de sagas.
-   
+
+### Recursos: 
+
+ - API Open Movie Database (OMDb).
+ - Bootstrap 3.3.7.
+ - jQuery.
+ - Trello.
+ - Firebase.
+ - Google Form.
+ - HTML 5.
+ - CSS 3.
+ - Javascript.
+
+ ### Organización: 
+
+ Mediante el uso de Trello pudimos delegarnos tareas y actividades para poder llevar a cabo este producto en el tiempo pactado.
+
+  ![Necesidad](assets/images/organizacion.PNG)
+
+### Flujo de Trabajo:
+
+
+
 ### PROYECTO PILOTO : [PROYECTO](https://manu160296.github.io/testing-movie/)
 
-### FLUJO DE TRABAJO:
 
-#### 1ST DAY:
-  ##### Recursos:
-  ![Recursos](assets/images/recursos.jpg)
-  - API de Open Movie Database(OMDB).
-  - FRAMWORKS: Bootstrap 4.
-  - LIBRERIAS: jQuery.
-  - GitHub
-  - Trello
-  - Slack
-  - Google Form
-  - HTML 5
-  - CSS
-  - JavaScript
 
   ##### Estudio del mercado:
   ![Necesidad](assets/images/estudioMercado.png)

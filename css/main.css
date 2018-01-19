@@ -1,3 +1,43 @@
+/* Logtin */
+
+.back-login {
+  background-image: url(../assets/images/back-login.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fa-circle-o {
+  font-size: 10px;
+  color: #050000;
+}
+  
+div.line::after {
+  display: inline-block;
+  margin: 0 0 12px 10px;
+  height: 3px;
+  content: " ";
+  background-color: rgb(5, 0, 0);
+  width: 40px;
+}
+  
+div.line::before {
+  display: inline-block;
+  margin: 0 10px 12px 0;
+  height: 3px;
+  content: " ";
+  background-color: rgb(5, 0, 0);
+  width: 40px;
+}
+
+.login {
+  background-color: #f16439d0;
+  opacity: 0.5;
+}
+
+.block {
+  display: block;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +68,6 @@
 .btn-login {
   color: white;
   font-family: 'Pontano Sans', sans-serif;
-  background-color: 
 }
 
 /*LOGIN ULTIMO */
@@ -42,7 +81,7 @@
 .bg-black{
   width: 100%;
   height: 100vh;
-  background-color: #333335
+  background-color: #333335;
 }
 
 .bg-image{
