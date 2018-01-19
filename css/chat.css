@@ -1,26 +1,75 @@
+* {
+  font-family: 'Norican', cursive;
+  font-family: 'Marvel', sans-serif;
+}
 
-  
-  /*Firebase*/
- 
-  .photo-url {
-    width: 100px;
-  }
-  
-  .conversacion {
-    width: 50%;
-    margin-left: 100px;
-  }
-  
-  .mess {
-    margin-left: 100px;
-  }
-  
-  .chat {
-    width: 100%;
-  }
-  
-  .btn-chat {
-    width: 50%;
-    margin-left: 100px;
-    margin-bottom: 20px;
-  }
+body {
+  background-image: url('../assets/images/back-login.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .grad {
+  background-image: url(../assets/images/back-login.jpg);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Marvel', sans-serif;
+}  */
+
+.grad1 {
+  background-color: rgba(49, 47, 47, 0.514);
+  height: 100%;
+}
+
+.title {
+  margin: 0;
+  font-family: 'Norican', cursive;
+  font-size: 2em;
+  color: rgb(214, 163, 23);
+  padding: 10px;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+  display: inline-block;
+}
+
+.perfil{
+  display: inline-block;
+}
+
+.navbar-home {
+  background-color: rgba(250, 248, 248, 0.835);
+  border-radius: 0;
+}
+
+.main-container {
+  font-family: 'Marvel', sans-serif;
+}
+
+
+/* firebase */
+
+.container {
+  width: 70%;
+  background: skyblue;
+  margin-top: 20%;
+}
+
+.conversacion {
+  width: 70%;
+  margin-left: 15px;
+}
+
+.mess {
+  margin-left: 15px;
+}
+
+.chat {
+  width: 100%;
+}
+
+.btn-chat {
+  width: 25%;
+  margin-left: 50px;
+  margin-bottom: 3px;
+}
