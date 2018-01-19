@@ -74,7 +74,7 @@ $(document).ready(function() {
 
   // funcion que busca peliculas por el titulo:
   function getMovie(searchText) {
-    $.getJSON('http://www.omdbapi.com/?&apikey=a00f7a66&s=' + encodeURI(searchText) + '&type=movie').then(function(response) {
+    $.getJSON('https://www.omdbapi.com/?&apikey=a00f7a66&s=' + encodeURI(searchText) + '&type=movie').then(function(response) {
       console.log(response);
       filterMovies(response);
     });
@@ -97,7 +97,7 @@ $(document).ready(function() {
     console.log(idResults);
 
     for (var i = 0 ; i < idResults.length ; i++) {
-      $.getJSON('http://www.omdbapi.com/?&apikey=3a181f1c&i=' + idResults[i])
+      $.getJSON('https://www.omdbapi.com/?&apikey=3a181f1c&i=' + idResults[i])
         .then(function(response) {
           console.log(response);
           if (response.Genre.indexOf('Short') !== -1 || response.Genre.indexOf('Documentary') !== -1) {
