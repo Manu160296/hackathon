@@ -22,13 +22,13 @@ Personas de 16-30 años, que les guste los géneros de terror, comedia, basados 
  - CSS 3.
  - Javascript.
 
- ### Organización: 
+### Organización: 
 
  Mediante el uso de Trello pudimos delegarnos tareas y actividades para poder llevar a cabo este producto en el tiempo pactado.
 
   ![Necesidad](assets/images/organizacion.PNG)
 
-### Flujo de Trabajo:
+### Prototipado:
 
 Como equipo tuvimos idas y venidas respecto a qué producto realizaríamos, Aquí un breve resumen de la idea inicial y cómo fue evolucionando hasta el producto que hoy presentamos.
 
@@ -92,7 +92,22 @@ Por último, la vista del perfil para que el usuario pueda configurar su cuenta.
 
 ![Necesidad](assets/images/idea3-4.jpeg)
 
+### Flujo de Trabajo:
 
+Safanatics es una aplicación en versión mobile y desktop dirigida a personas entre los 16 y 30 años que gusten de mirar sagas y quieran tener información sobre esa saga. 
 
+Esta es la vista principal en la cual vamos a poder registrarnos si somos nuevos en la aplicación o si ya tenemos una cuenta pues iniciamos sesión. 
 
+![Necesidad](assets/images/index.PNG)
 
+Como somos nuevos en la aplicación, vamos a registrarnos y como tenemos una cuenta de google ingresamos mediante google. Este inicio se sesión es soportado por **Firebase**. esogiendo la cuenta con la que deseamos ingresar nos dirigimos a la siguiente vista.
+
+![Necesidad](assets/images/google.PNG)
+
+En la siguiente vista podemos observar el home, en el cual tenemos un buscador y una barra superior que si nos vamos a los logos nos redirigimos a otras vistas.
+
+![Necesidad](assets/images/home.PNG)
+
+Si realizamos la busqueda nos da todos los resultados de esa saga
+
+![Necesidad](assets/images/busqueda.PNG)
