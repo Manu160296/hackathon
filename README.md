@@ -111,3 +111,7 @@ En la siguiente vista podemos observar el home, en el cual tenemos un buscador y
 Si realizamos la busqueda nos da todos los resultados de esa saga
 
 ![Necesidad](assets/images/busqueda.PNG)
+
+Y si ingresamos al icono chat, podemos hablar con otros fanaticos de otras sagas a tiempon real.
+
+![Necesidad](assets/images/chat.PNG)
