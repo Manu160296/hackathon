@@ -7,14 +7,19 @@ html, body, main {
   margin: 0;
   padding: 0;
 }
-
+/* --------cambios---------*/
+.text-white {
+  color: red;
+}
 #carousel {
   position: relative;
   height: 400px;
-  top: 35%;
-  transform: translateY(-50%);
+/*  top: 35%;  35*/
+/*  transform: translateY(-20%);-50*/
   overflow: hidden;
 }
+
+/* -------cambios-------*/
 #carousel div {
   position: absolute;
   transition: transform 1s, left 1s, opacity 1s, z-index 0s;
@@ -87,31 +92,29 @@ html, body, main {
   bottom: 10px;
 }
 
-/* Boton flotante*/
-.botonF1{
-  width:60px;
-  height:60px;
-  border-radius:100%;
-  background:#F44336;
-  right:0;
-  bottom:0;
-  position:absolute;
-  margin-right:16px;
-  margin-bottom:16px;
-  border:none;
-  outline:none;
-  color:#FFF;
-  font-size:36px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  transition:.3s;  
+/* HELPERS*/
+
+.padding-0{
+  padding: 0;
 }
 
-span{
-  transition:.5s;  
+.margin-0{
+  margin: 0;
 }
-.botonF1:hover span{
-  transform:rotate(360deg);
+
+/* HOME JS STYLES*/
+
+#container-movies-js img, #movie img {
+  width: 100%;
 }
-.botonF1:active{
-  transform:scale(1.1);
+
+
+@media (min-width:960px){
+  .col-md-3 .col-md-3 .well{
+      height: 420px;
+    }
+
+  #container-movies-js .col-md-3 img {
+      height: 240px;
+    }
 }
