@@ -1,119 +1,57 @@
-/* Logtin */
+* {
+  font-family: 'Norican', cursive;
+  font-family: 'Marvel', sans-serif;
+}
 
-.back-login {
+/*Index */
+
+.grad {
   background-image: url(../assets/images/back-login.jpg);
+  background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
-.fa-circle-o {
-  font-size: 10px;
-  color: #050000;
+.grad1 {
+  background-color: rgba(49, 47, 47, 0.514);
+  height: 100vh;
 }
 
-div.line::after {
-  display: inline-block;
-  margin: 0 0 12px 10px;
-  height: 3px;
-  content: " ";
-  background-color: rgb(5, 0, 0);
-  width: 40px;
-}
-
-div.line::before {
-  display: inline-block;
-  margin: 0 10px 12px 0;
-  height: 3px;
-  content: " ";
-  background-color: rgb(5, 0, 0);
-  width: 40px;
-}
-
-.login {
-  background-color: #f16439d0;
-  opacity: 0.5;
-}
-
-.block {
-  display: block;
-}
-
-* {
+.title {
   margin: 0;
-  padding: 0;
-  font-family: 'Pacifico', cursive;
-  font-family: 'Pontano Sans', sans-serif;
-  box-sizing: border-box;
+  margin-left: 8%;
+  font-family: 'Norican', cursive;
+  font-size: 7em;
+  color: rgb(214, 163, 23);
+  padding: 160px 0;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
 
-/* Logtin */
-
-.back-login {
-  background: linear-gradient(rgb(27, 27, 27) 20%, rgb(87, 88, 88));
-  background-repeat: no-repeat;
-  height: 100vh;
+.title1 {
+  color: whitesmoke;
+  margin-top: -150px;
+  font-size: 2em;
+  margin-left: 13%;
 }
 
-.name {
-  font-family: 'Pacifico';
-  font-weight: lighter;
-  font-size: 12rem;
-  padding: 100px 0;
-  color: rgb(37, 248, 125);
-  text-shadow: 2px 2px 2px rgba(255, 253, 253, 0.993);
+.btones{
+  margin-left: 25%;
+  margin-top: 30px;
 }
 
-.btn-gmail,
-.btn-signup,
-.btn-login {
+.btn-index1,
+.btn-index2 {
   color: white;
-  font-family: 'Pontano Sans', sans-serif;
-/*Perfil*/
-
-.profile-pic {
-  border: 5px solid red;
-  width: 256px;
-
+  font-size: 2em;
+  border-radius: 25px;
+  background-color: rgba(27, 200, 212, 0.678);
+  width: 40vw;
+  padding: 10px;
 }
 
-/*LOGIN ULTIMO */
-
-.flexbox-container{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.bg-black{
-  width: 100%;
-  height: 100vh;
-  background-color: #333335;
-}
-
-.bg-image{
-  outline: 3px solid red;
-  width: 40%;
-  height: 100vh;
-}
-
-.img-size{
-  width: 50%;
-  height: 60%;
-}
-
-.btn-style{
- /* border: 1px solid #fff; */
-  border-radius: 30px;
-  color: #fff;
-  background-color: #EA4235;
-  padding: 15px;
-}
-
-.btn-style:hover{
-  background-color:#d6281b;
-  color: black;
-}
-
-.bg-primary{
-  background-color: #7E0B0B;
+.btn-index1:hover,
+.btn-index2:hover {
+  background-color: rgba(226, 173, 27, 0.459);
+  color: white;
 }
