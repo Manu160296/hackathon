@@ -41,32 +41,33 @@ div.line::before {
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Pontano Sans', sans-serif;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
 }
 
-/*Index*/
+/* Logtin */
 
-
-.icon-home {
-  height: 70vh;
-  width: 100%;
-  margin-top: 90px;
-  margin-left: 8px;
+.back-login {
+  background: linear-gradient(rgb(27, 27, 27) 20%, rgb(87, 88, 88));
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-.phrase {
-  color: rgb(145, 28, 28);
-  font-size: 25px;
-  font-weight: 700;
-  text-align: center;
-  margin-top: 10px;
+.name {
+  font-family: 'Pacifico';
+  font-weight: lighter;
+  font-size: 12rem;
+  padding: 100px 0;
+  color: rgb(37, 248, 125);
+  text-shadow: 2px 2px 2px rgba(255, 253, 253, 0.993);
 }
 
-.grad {
-  background-color: aquamarine;
-}
-
+.btn-gmail,
+.btn-signup,
+.btn-login {
+  color: white;
+  font-family: 'Pontano Sans', sans-serif;
 /*Perfil*/
 
 .profile-pic {
