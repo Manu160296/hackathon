@@ -175,7 +175,7 @@
 <h3>Plot </h3>
 
 <hr>
-<a href="../index.html" class="btn btn-default">Go Back To Search</a>
+<a href="home.html" class="btn btn-default">Go Back To Search</a>
 </div>
 </div>
 `;
