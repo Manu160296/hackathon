@@ -1,8 +1,8 @@
-$(document).ready(function() {
-  $('.carousel').carousel();
+//$(document).ready(function() {
+ /* $('.carousel').carousel();
   $('.carousel').carousel({
     interval: 2000
-  });
+  }); */
   function moveToSelected(element) {
     if (element === 'next') {
       var selected = $('.selected').next();
@@ -111,17 +111,80 @@ $(document).ready(function() {
             var li = $('<li class="list-group-item">');
             var img = $('<img src="' + response.Poster + '" with="50px">');
             var output = `
-    <div class ="col-md-3">
+    <div class ="col-md-3 prueba-contenedor">
     <div class = "well text-center">
     <img  src= "${response.Poster}">
     <h5> ${response.Title}</h5>
-    <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">Movie Details </a>
+    <a data-id="${response.Title}" data-title="${response.Title}" data-genere= "${response.Genre}" data-director="${response.Director}"  data-plot="${response.Plot}"  data-poster="${response.Poster}"  data-actors="${response.Actors}" class="btn btn-primary prueba" href="#">Movie Details </a>
     </div>
     </div>
     `;
-            $('#container-movies-js').append(output);
+    //aqui
+    $('#container-movies-js').append(output);
+    $('.prueba-contenedor').on('click', function (event) {
+      event.preventDefault()
+      var title = event.target.dataset.title;
+      var genere = event.target.dataset.genere;
+      var director = event.target.dataset.director;
+      var plot = event.target.dataset.plot;
+      var poster = event.target.dataset.poster;
+      var actors = event.target.dataset.actors;
+      
+      sessionStorage.setItem('title', title);
+      sessionStorage.setItem('genere', genere);
+      sessionStorage.setItem('director', director);
+      sessionStorage.setItem('plot', plot);
+      sessionStorage.setItem('poster', poster);
+      sessionStorage.setItem('actors', actors);
+      window.location = 'movie.html';
+         return false;
+      // console.log($(this))
+     }) 
           }
         });
     }
+   
   };
-});
+
+  function getResult () {
+    var movieId = sessionStorage.getItem('movieId');
+    var movieTitle = sessionStorage.getItem('title');
+    var movieGenere = sessionStorage.getItem('genere');
+    var movieDirector = sessionStorage.getItem('director')
+    var moviePlot = sessionStorage.getItem('plot');
+    var moviePoster = sessionStorage.getItem('poster');
+    var movieActors = sessionStorage.getItem('actors');
+
+    var output = `
+<div class="row">
+<div class = "col-md-4">
+ <img src = "${moviePoster}" class = "thumbnail">
+</div>
+<div class="col-md-8">
+<h2>${movieTitle}</h2> 
+<ul class ="list-group">
+<li class="list-group-item"><strong> Genere: </strong> ${movieGenere}</li>
+<li class="list-group-item"><strong> Director: </strong> ${movieDirector}</li>
+<li class="list-group-item"><strong> Actors: </strong> ${movieActors}</li>
+<li class="list-group-item"><strong> Plot: </strong> ${moviePlot}</li>
+</ul>
+</div>
+</div>
+<div class= "row">
+<div class = "well">
+<h3>Plot </h3>
+
+<hr>
+<a href="../index.html" class="btn btn-default">Go Back To Search</a>
+</div>
+</div>
+`;
+$('#movie-description').html(output);
+
+  }
+
+ 
+ 
+
+  
+//});
