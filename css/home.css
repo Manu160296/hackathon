@@ -3,159 +3,38 @@
   font-family: 'Marvel', sans-serif;
 }
 
-.grad {
-  background-image: url(../assets/images/back-login.jpg);
-  background-position: 100% 100%;
+.red {
+  background-image: url('../assets/images/star-wars.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
-  font-family: 'Marvel', sans-serif;
+  background-position: center;
+  height: 600px; 
+
 }
 
-.grad1 {
-  background-color: rgba(49, 47, 47, 0.514);
-  height: 100%;
+.amber {
+  background-image: url('../assets/images/eclipse.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px; 
+
 }
 
-.title {
-  margin: 0;
-  font-family: 'Norican', cursive;
-  font-size: 2em;
-  color: rgb(214, 163, 23);
-  padding: 10px;
-  text-shadow: 2px 2px 2px rgb(255, 255, 255);
-  display: inline-block;
+.green {
+  background-image: url('../assets/images/goku.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px; 
+
 }
 
-.perfil{
-  display: inline-block;
-}
+.blue {
+  background-image: url('../assets/images/señor.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px; 
 
-.navbar-home {
-  background-color: rgba(250, 248, 248, 0.835);
-  border-radius: 0;
-}
-
-.main-container {
-  font-family: 'Marvel', sans-serif;
-}
-
-/* --------cambios---------*/
-.text-white {
-  font-family: 'Marvel', sans-serif;
-  color: rgb(214, 163, 23);
-  font-weight: bolder;
-}
-
-.form-search {
-  width: 40vw;
-  border-radius: 25px;
-}
-
-.btn-search {
-  color: white;
-  font-size: 20px;
-  border-radius: 25px;
-  background-color: rgba(27, 200, 212, 0.678);
-  width: 10vw;
-  padding: 5px;
-}
-
-#carousel {
-  position: relative;
-  height: 400px;
-/*  top: 35%;  35*/
-/*  transform: translateY(-20%);-50*/
-  overflow: hidden;
-}
-
-/* -------cambios-------*/
-#carousel div {
-  position: absolute;
-  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
-  opacity: 1;
-}
-#carousel div img {
-  width: 400px;
-  transition: width 1s;
-}
-#carousel div.hideLeft {
-  left: 0%;
-  opacity: 0;
-  transform: translateY(50%) translateX(-50%);
-}
-#carousel div.hideLeft img {
-  width: 200px;
-}
-#carousel div.hideRight {
-  left: 100%;
-  opacity: 0;
-  transform: translateY(50%) translateX(-50%);
-}
-#carousel div.hideRight img {
-  width: 200px;
-}
-#carousel div.prev {
-  z-index: 5;
-  left: 30%;
-  transform: translateY(50px) translateX(-50%);
-}
-#carousel div.prev img {
-  width: 300px;
-}
-#carousel div.prevLeftSecond {
-  z-index: 4;
-  left: 15%;
-  transform: translateY(50%) translateX(-50%);
-  opacity: 0.7;
-}
-#carousel div.prevLeftSecond img {
-  width: 200px;
-}
-#carousel div.selected {
-  z-index: 10;
-  left: 50%;
-  transform: translateY(0px) translateX(-50%);
-}
-#carousel div.next {
-  z-index: 5;
-  left: 70%;
-  transform: translateY(50px) translateX(-50%);
-}
-#carousel div.next img {
-  width: 300px;
-}
-#carousel div.nextRightSecond {
-  z-index: 4;
-  left: 85%;
-  transform: translateY(50%) translateX(-50%);
-  opacity: 0.7;
-}
-#carousel div.nextRightSecond img {
-  width: 200px;
-}
-
-.buttons {
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 10px;
-}
-
-/* HOME JS STYLES*/
-
-#container-movies-js img, #movie img {
-  width: 100%;
-}
-
-
-@media (min-width:960px){
-  .col-md-3 .col-md-3 .well{
-      height: 420px;
-      margin-top: 20px;
-    }
-
-  #container-movies-js .col-md-3 img {
-      height: 240px;
-    }
 }

@@ -1,3 +1,5 @@
+$(".dropdown-button").dropdown();
+
 var txtNombre = document.getElementById('nombre');
 var txtMensaje = document.getElementById('mensaje');
 var btnEnviar = document.getElementById('btnEnviar');
