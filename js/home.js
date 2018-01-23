@@ -55,9 +55,7 @@ $(".dropdown-button").dropdown();
   $('#next').click(function() {
     moveToSelected('next');
   });
-
-
-  // funcionalidad buscador :
+  
 
   // nombrando variables necesarias:
   var arrResults = [];

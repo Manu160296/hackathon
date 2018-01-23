@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Safanatics</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="vendors/bootstrap-3.3.7-dist/css/bootstrap.min.css" >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Marvel:400,400i,700,700i|Norican" rel="stylesheet">
+</head>
+<body class="grad">
+  <div class="container-flex-column  text-center grad1">
+    <div><h1 class="title">Safanatics</h1></div>
+    <div><p class="title1">Las mejores sagas en un solo lugar</p></div>
+    <div class="container bg-black">
+      <br><br>
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-5 btones">
+          <button class="btn btn-style btn-index1" data-toggle="modal" data-target=".sign-in-modal">Regístrate</button>
+          <br>
+          <br>
+          <button class="btn btn-style btn-index2 " data-toggle="modal" data-target=".sign-up-modal">Inicia sesión</button>
+        </div>
+      </div>
+    </div>
+  <!--MODAL REGISTRARSE -->
+    <div class="modal fade sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="gridSystemModalLabel">Regístrate</h4>
+        </div>
+        <div class="modal-body">
+          <div class="">
+            <div class="input-group form-group">
+            <div class="input-group-addon"> <i class="fa fa-user-circle-o fa-lg"></i> </div>
+            <input type="text" name="" value="" placeholder="Correo" class="form-control register-email-js">
+            </div>
+            <div class="input-group form-group">
+            <div class="input-group-addon"> <i class="fa fa-lock fa-lg"></i> </div>
+            <input type="password" name="" value="" placeholder="Contraseña" class="form-control password-register-js">
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary send-register-js" data-dismiss="modal">Empecemos</button>
+          <button class="btn btn-warning" id="start-login">Ingresa con Google</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  
+  <!--MODAL INGRESAR -->
+    <div class="modal fade sign-up-modal " tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="gridSystemModalLabel">Log In</h4>
+    </div>
+    <div class="modal-body">
+      <div class="">
+        <div class="input-group form-group">
+        <div class="input-group-addon"> <i class="fa fa-user-circle-o fa-lg"></i> </div>
+        <input type="text" name="" value="" placeholder="Email" class="form-control register-email2-js ">
+        </div>
+        <div class="input-group form-group">
+        <div class="input-group-addon"> <i class="fa fa-lock fa-lg"></i> </div>
+        <input type="password" name="" value="" placeholder="Password" class="form-control password-register2-js">
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary send-register2-js ">Ingresar</button>
+    </div>
+    <div class="modal-footer">
+    <!--  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+      <button class="btn btn-warning">Log in with google</button>
+    </div>
+  </div>
+  </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="vendors/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
