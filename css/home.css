@@ -4,6 +4,15 @@
   font-family: 'Raleway', sans-serif;
 }
 
+.carousel-size {
+  height: 400px;
+  width: 70vw;
+}
+
+.bg-grad{
+  background-color: rgba(49, 47, 47, 0.514);
+}
+
 .grad {
   background-image: url(../assets/images/back-login.jpg);
   background-position: 100% 100%;
